@@ -15,6 +15,7 @@
 This implementation is ment to show the difference in performance between a Graviton instance and a T2 running the same Java application. The key difference for this comparison to work is ussing Java Correto for the Graviton instances and plain OpenJDK for the T2 instances.
 
 
+
 ## How Deploy
 
 ### Build the images
@@ -26,14 +27,18 @@ This implementation is ment to show the difference in performance between a Grav
 - Note: You might want to include or run any other Java application for comparison of your specific usecase, just add the application to the Dockerfile and overwrite the entrypoint
 
 <div align="center">
-![Deployment](Media/deploy.webm)
+  
+[Deployment](https://github.com/gasamoma/Ec2vsGraviton/assets/14201087/cc9145c0-b1d2-4745-837a-049391aa041b)
+
 </div>
 
 ## About the project.
 
 ### Performance comparison
 <div align="center">
-![Video](Media/performance_comparison.webm)
+
+[Media_performance_comparison.webm](https://github.com/gasamoma/Ec2vsGraviton/assets/14201087/acf90acf-b144-4f14-8fde-cd4e517078a6)
+
 </div>
 
 
@@ -67,7 +72,9 @@ docker buildx build --platform linux/amd64,linux/arm64 --tag ${AWS_ACCOUNT_ID}.d
 
 ## Cleanup
 <div align="center">
-![Destroy](Media/destroy.webm)
+
+[Media_destroy.webm](https://github.com/gasamoma/Ec2vsGraviton/assets/14201087/2091915b-4224-44ab-9031-e781799648b3)
+
 </div>
 
 ## Future scope
